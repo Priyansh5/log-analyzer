@@ -1,0 +1,40 @@
+192.168.1.1 - - [06/Sep/2024:15:05:12 +0000] "GET /index.html HTTP/1.1" 200 1024
+192.168.1.2 - - [06/Sep/2024:15:06:13 +0000] "POST /admin/login.php HTTP/1.1" 401 2048
+192.168.1.3 - - [06/Sep/2024:15:07:14 +0000] "GET /api/v1/users HTTP/1.1" 200 512
+192.168.1.4 - - [06/Sep/2024:15:08:15 +0000] "GET /images/logo.png HTTP/1.1" 200 256
+203.0.113.5 - john [06/Sep/2024:15:09:16 +0000] "GET /index.html HTTP/1.1" 200 1024 "http://example.com" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+192.168.1.6 - - [06/Sep/2024:15:10:17 +0000] "GET /about.html HTTP/1.1" 200 512
+203.0.113.7 - jane [06/Sep/2024:15:11:18 +0000] "GET /contact.html HTTP/1.1" 200 2048 "http://example.com" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+203.0.113.8 - - [06/Sep/2024:15:12:19 +0000] "GET /scripts/exploit.js HTTP/1.1" 200 128 "http://malicious.com" "curl/7.64.1"
+203.0.113.9 - - [06/Sep/2024:15:13:20 +0000] "GET /?id=1 UNION SELECT * FROM users HTTP/1.1" 500 256
+203.0.113.10 - - [06/Sep/2024:15:14:21 +0000] "GET /../etc/passwd HTTP/1.1" 404 64
+127.0.0.1 - john [10/Sep/2024:14:56:29 +0000] "GET /home HTTP/1.1" 200 1234 "http://example.com" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+192.168.1.1 - mary [10/Sep/2024:15:01:12 +0000] "POST /login HTTP/1.1" 302 500 "http://example.com/login" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15A372 Safari/604.1"
+10.0.0.5 - bob [10/Sep/2024:15:03:45 +0000] "GET /profile HTTP/1.1" 404 512 "http://example.com/profile" "Mozilla/5.0 (Linux; Android 10; SM-A705FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.152 Mobile Safari/537.36"
+172.16.0.1 - alice [10/Sep/2024:15:05:21 +0000] "GET /admin HTTP/1.1" 403 850 "http://example.com/admin" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15"
+8.8.8.8 - guest [10/Sep/2024:15:07:10 +0000] "GET /contact HTTP/1.1" 200 1024 "http://example.com/contact" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0"
+127.0.0.1 - john [10/Sep/2024:15:12:34 +0000] "POST /login HTTP/1.1" 302 634 "http://example.com/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+192.168.1.1 - mary [10/Sep/2024:15:15:42 +0000] "GET /dashboard HTTP/1.1" 200 1532 "http://example.com/dashboard" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15A372 Safari/604.1"
+10.0.0.5 - bob [10/Sep/2024:15:17:08 +0000] "GET /account/settings HTTP/1.1" 500 932 "http://example.com/account/settings" "Mozilla/5.0 (Linux; Android 10; SM-A705FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.152 Mobile Safari/537.36"
+172.16.0.1 - alice [10/Sep/2024:15:20:45 +0000] "POST /admin HTTP/1.1" 200 2048 "http://example.com/admin" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15"
+8.8.8.8 - guest [10/Sep/2024:15:23:59 +0000] "GET /about HTTP/1.1" 200 1234 "http://example.com/about" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0"
+127.0.0.1 - john [10/Sep/2024:15:26:43 +0000] "GET /products HTTP/1.1" 200 1450 "http://example.com/products" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+192.168.1.1 - mary [10/Sep/2024:15:29:12 +0000] "GET /order/history HTTP/1.1" 200 1992 "http://example.com/order/history" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15A372 Safari/604.1"
+10.0.0.5 - bob [10/Sep/2024:15:31:04 +0000] "POST /order/cancel HTTP/1.1" 403 712 "http://example.com/order/cancel" "Mozilla/5.0 (Linux; Android 10; SM-A705FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.152 Mobile Safari/537.36"
+172.16.0.1 - alice [10/Sep/2024:15:34:20 +0000] "GET /logout HTTP/1.1" 200 902 "http://example.com/logout" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15"
+8.8.8.8 - guest [10/Sep/2024:15:36:55 +0000] "GET /news HTTP/1.1" 200 2034 "http://example.com/news" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0"
+127.0.0.1 - john [10/Sep/2024:15:40:11 +0000] "POST /upload HTTP/1.1" 404 230 "http://example.com/upload" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+192.168.1.1 - mary [10/Sep/2024:15:42:47 +0000] "GET /home HTTP/1.1" 200 1675 "http://example.com/home" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15A372 Safari/604.1"
+10.0.0.5 - bob [10/Sep/2024:15:44:13 +0000] "POST /cart/add HTTP/1.1" 302 432 "http://example.com/cart/add" "Mozilla/5.0 (Linux; Android 10; SM-A705FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.152 Mobile Safari/537.36"
+172.16.0.1 - alice [10/Sep/2024:15:46:59 +0000] "GET /account/settings HTTP/1.1" 200 782 "http://example.com/account/settings" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15"
+8.8.8.8 - guest [10/Sep/2024:15:48:35 +0000] "GET /contact HTTP/1.1" 200 908 "http://example.com/contact" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0"
+127.0.0.1 - john [10/Sep/2024:15:51:18 +0000] "GET /home HTTP/1.1" 200 1200 "http://example.com/home" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+192.168.1.1 - mary [10/Sep/2024:15:54:40 +0000] "POST /order/checkout HTTP/1.1" 302 582 "http://example.com/order/checkout" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15A372 Safari/604.1"
+10.0.0.5 - bob [10/Sep/2024:15:57:09 +0000] "GET /cart HTTP/1.1" 200 432 "http://example.com/cart" "Mozilla/5.0 (Linux; Android 10; SM-A705FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.152 Mobile Safari/537.36"
+172.16.0.1 - alice [10/Sep/2024:16:00:00 +0000] "POST /cart/remove HTTP/1.1" 500 901 "http://example.com/cart/remove" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15"
+8.8.8.8 - guest [10/Sep/2024:16:03:22 +0000] "GET /about HTTP/1.1" 200 832 "http://example.com/about" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0"
+127.0.0.1 - john [10/Sep/2024:16:05:43 +0000] "GET /profile HTTP/1.1" 200 1235 "http://example.com/profile" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36"
+192.168.1.1 - mary [10/Sep/2024:16:08:09 +0000] "POST /profile/update HTTP/1.1" 200 543 "http://example.com/profile/update" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15A372 Safari/604.1"
+10.0.0.5 - bob [10/Sep/2024:16:10:50 +0000] "GET /account HTTP/1.1" 404 987 "http://example.com/account" "Mozilla/5.0 (Linux; Android 10; SM-A705FN) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.152 Mobile Safari/537.36"
+172.16.0.1 - alice [10/Sep/2024:16:14:20 +0000] "GET /support HTTP/1.1" 200 2000 "http://example.com/support" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Safari/605.1.15"
+8.8.8.8 - guest [10/Sep/2024:16:17:30 +0000] "GET /privacy-policy HTTP/1.1" 200 1230 "http://example.com/privacy-policy" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0"
